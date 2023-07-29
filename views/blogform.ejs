@@ -1,0 +1,30 @@
+<%- include ('partials/header') %>
+    <main>
+        <section class="blogform">
+            <h2>Create Blog</h2>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="form-elem">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="form-elem">
+                    <label for="category">Category</label>
+                    <input type="text" id="category" name="category" required>
+                </div>
+
+                <div class="form-image">
+                    <label for="blogimage">Image</label>
+                    <input type="file" name="blogimage" id="blogimage" required>
+                </div>
+    
+                <div class="form-elem">
+                    <label for="content">Content</label>
+                    <textarea id="content" name="content" rows="10" cols="30"></textarea>
+                </div>
+    
+                <button type="submit">Submit Blog</button>
+            </form>
+        </section>  
+    </main>
+<%- include ('partials/footer') %>

@@ -1,0 +1,29 @@
+<%- include ('partials/header') %>
+    <main>
+        <section class="login-container register-container">
+            <h2>Sign up</h2>
+
+            <form action="" method="post">
+                <div class="form-grp">            
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required>
+                </div>
+
+                <div class="form-grp">            
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="form-grp">            
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+
+                <div class="form-grp">            
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Enter Confirm Password" required>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <p>Already Registered? <a href="/login">Sign in</a></p>
+        </section>  
+    </main>
+<%- include('partials/footer') %>

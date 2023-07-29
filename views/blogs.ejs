@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+    <main>
+        <section class="blogs-container">
+            <h2>Blogs</h2>
+            <div class="blog-container">
+                <% data.forEach(blog => { %>
+                <div class="blog">
+                    <div class="header-image">
+                        <img src="<%= blog.image %>" alt="">
+                    </div>
+    
+                    <div class="blog-content">
+                        <div class="category">
+                            <span><%= blog.category %></span>
+                        </div>
+
+                        <div class="title">
+                            <span><%= blog.title %></span>
+                        </div>
+
+                        <div class="content">
+                            <p><%= blog.content.substring(0, 130) %><a href="/blog-<%= blog.id %>">... Read more</a></p>
+                        </div>
+    
+                        <div class="author">
+                            <div class="avatar">
+                                <img src="images/defaultavatar.jpg" alt="" srcset="">
+                            </div>
+                            <div class="author-details">
+                                <span class="host-name"><%= blog.author %></span>
+                                <span class="date"><%= blog.updated %></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </section>
+    </main>
+<%- include('partials/footer') %>

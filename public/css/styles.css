@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 5px;
+    box-shadow: 0 0 4px rgba(54, 18, 18, 0.2);
+}
+
+nav .left-content h1{
+    font-size: 1.2em;
+}
+
+nav .middle-content ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px
+}
+
+nav .middle-content ul li{
+    list-style-type: none;
+}
+
+nav .middle-content ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #17202A;
+}
+
+nav .middle-content ul li a:hover{
+    color: #5DADE2;
+    font-size: 20px;
+}    
+
+nav .right-content{
+    position: relative;
+}
+
+nav .right-content .search-icon{
+    position: absolute;
+    top: 22px;
+    left: 23px;
+    color: #273746;
+}
+
+nav .right-content form input[type="text"]{
+    width: 240px;    
+    height: 35px;
+    font-size: 16px;
+    border: 1px solid #F4F6F7;
+    border-radius: 16px;
+    background-color: #F4F6F7;
+    padding-left: 55px;
+}
+
+/* Home Section */
+.image img{
+    width: 100%;
+    height: 500px;
+}
+
+.home-blog-container{
+    width: 60%;
+    margin: 30px auto;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home-blog-container h2{
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 50px;
+}
+
+.home-blogs{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-blogs .host-details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.home-blogs .host-details img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.home-blogs .host-details span{
+    font-size: 18px;
+}
+
+.home-blogs .host-details .name{
+    font-weight: bold;
+    margin: auto 8px;
+}
+
+.home-blogs .home-blog-details{
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.home-blogs .home-blog-details .home-blog h3{
+    font-size: 1em;
+}
+
+.home-blogs .home-blog-details .home-blog .blog-content{
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.home-blogs .home-blog-details .home-blog .blog-content a{
+    font-size: 18px;
+    color: #5DADE2;
+    text-decoration: none;
+}
+
+.home-blogs .home-blog-details .home-blog-image img{
+    height: 150px;
+    width: 170px;
+}
+
+.home-blogs .home-blog-category{
+    margin-top: 18px;
+}
+
+.home-blogs .home-blog-category span{
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background: #F2F3F4;
+    padding: 8px;
+    border-radius: 35px;
+}
+
+.home-blogs hr{
+    margin-top: 30px;
+}
+
+/* About Content */
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 70%;
+}
+
+.about-container h2{
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.about-container .about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-container .about-content p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.about-container .about-content .bold-text{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about-container .about-content ol li{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.about-container .about-content ol li .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Blog Section */
+.specificblog-container{
+    margin: 60px auto;
+    width: 60%;
+}
+
+.specificblog-container .specificblog-header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.specificblog-container .specificblog-header h2{
+    font-size: 1.3em;
+}
+
+.specificblog-container .specificblog-header .host-details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.specificblog-container .specificblog-header .host-details img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.specificblog-container .specificblog-header .host-details span{
+    font-size: 18px;
+}
+
+.specificblog-container .specificblog-header .host-details .name{
+    font-weight: bold;
+    margin: auto 8px;
+}
+
+.specificblog-container .specificblog-image{
+    margin-left: 60px;
+    margin-bottom: 45px;
+}
+
+.specificblog-container .specificblog-image img{
+    height: 420px;
+    width: 560px;
+}
+
+.specificblog-container .specificblog-content{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.specificblog-container .specificblog-content p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Login Section */
+.login-container{
+    width: 28%;
+    height: 400px;
+    margin: 60px auto;   
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #FEFCFF;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2{
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container p{
+    font-size: 18px;
+    margin: 40px auto;
+    width: 70%;
+}
+
+.login-container p a{
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.login-container p a:hover{
+    font-size: 20px;
+    color: #5DADE2;
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.login-container form input{
+    height: 35px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    padding-left: 10px;
+    background: #FBFCFC;
+}
+
+.login-container button[type="submit"],
+.blogform form button[type="submit"]{
+    cursor: pointer;
+    width: 90%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.login-container button[type="submit"]:hover,
+.blogform form button[type="submit"]:hover{
+    background: #43A047;
+}    
+
+/* Register */
+.register-container{
+    height: 500px;
+    width: 30%;
+}
+
+.register-container p{
+    margin: 20px auto;
+}
+
+/* Blog Form */
+.blogform{
+    width: 50%;
+    margin: 60px auto;
+    border-radius: 8px;
+    background-color: #FEFCFF;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+}
+
+.blogform h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.blogform form{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.blogform form .form-elem,
+.blogform form .form-image{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blogform form .form-elem input,
+.blogform form .form-elem textarea{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 10px;
+    height: 35px;
+    font-size: 18px;
+}
+
+.blogform form .form-elem textarea{
+    height: 250px;
+    padding: 10px;
+}
+
+.blogform form button[type="submit"]{
+    font-size: 27px;
+    width: 100%;
+}
+
+/* Blogs Section */
+.blogs-container{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.blogs-container h2{
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.blogs-container .blog-container{
+    display: flex;
+    flex: 1;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.blogs-container .blog-container .blog{
+    width: 30%;
+    border: 2px solid #17202A;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.blogs-container .blog-container .blog .header-image img{
+    width: 100%;
+    height: 180px;
+}
+
+.blogs-container .blog-container .blog .blog-content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+    gap: 10px;
+}
+
+.blogs-container .blog-container .blog .blog-content .category span{
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background: #5DADE2;
+    color: #F4F6F7;
+    padding: 8px;
+    border-radius: 35px;
+}
+
+.blogs-container .blog-container .blog .blog-content .title{
+    margin-top: 15px;
+}
+
+.blogs-container .blog-container .blog .blog-content .title span{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.blogs-container .blog-container .blog .blog-content .content{
+    margin-top: 10px;
+}
+
+.blogs-container .blog-container .blog .blog-content .author{
+    margin: 10px;
+}
+
+.blogs-container .blog-container .blog .blog-content p{
+    font-size: 15px;
+}
+
+.blogs-container .blog-container .blog .blog-content p a{
+    font-size: 15px;
+    color: #5DADE2;
+    text-decoration: none;
+}
+
+.blogs-container .blog-container .blog .blog-content .author{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.blogs-container .blog-container .blog .blog-content .author .avatar img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}    
+
+.blogs-container .blog-container .blog .blog-content .author .author-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs-container .blog-container .blog .blog-content .author .author-details span{
+    font-size: 12px;
+}
+
+.blogs-container .blog-container .blog .blog-content .author .author-details .host-name{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px){
+    /* Navbar Section */
+    nav{
+        display: flex;       
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+    }
+
+    nav .left-content h1{
+        font-size: 25px;
+    }
+
+    nav .middle-content ul{
+        gap: 8px;
+    }
+
+    nav .middle-content ul li a{
+        font-size: 14px;
+    }
+
+    nav .middle-content ul li a:hover{
+        font-size: 14px;
+    }    
+
+    nav .right-content .search-icon{
+        font-size: 16px;
+    }
+
+    nav .right-content form input[type="text"]{
+        height: 30px;
+        width: 180px;
+    }
+
+    /* Home Section */
+    .image img{
+        height: 250px;
+    }
+
+    .home-blog-container{
+        width: 90%;
+        margin: 20px auto;
+        gap: 10px;
+    }
+
+    .home-blog-container h2{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .home-blogs .host-details img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .home-blogs .host-details span{
+        font-size: 15px;
+    }
+
+    .home-blogs .home-blog-details{
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .home-blogs .home-blog-details .home-blog h3{
+        font-size: 22px;
+    }
+
+    .home-blogs .home-blog-details .home-blog .blog-content{
+        font-size: 16px;
+    }
+
+    /* About Content */
+    .about-container{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .about-container h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .about-container .about-content{
+        gap: 10px;
+    }
+
+    .about-container .about-content p{
+        font-size: 17px;
+    }
+
+    .about-container .about-content .bold-text{
+        font-size: 20px;
+    }
+
+    .about-container .about-content ol{
+        margin-left: 3px;
+    }
+
+    .about-container .about-content ol li,
+    .about-container .about-content ol li .title{
+        font-size: 17px;
+    }
+
+    /* Blog Section */
+    .specificblog-container{
+        width: 90%;
+    }
+
+    .specificblog-container .specificblog-header{
+        gap: 25px;
+    }
+
+    .specificblog-container .specificblog-header h2{
+        font-size: 30px;
+    }
+
+    .specificblog-container .specificblog-header .host-details img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .specificblog-container .specificblog-header .host-details span{
+        font-size: 16px;
+    }
+
+    .specificblog-container .specificblog-image{
+        margin-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    .specificblog-container .specificblog-image img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .specificblog-container .specificblog-content p{
+        font-size: 18px;
+    }
+
+    /* Login Section */
+    .login-container{
+        width: 80%;
+    }
+
+    .login-container h2{
+        font-size: 36px;
+    }
+
+    .login-container form{
+        margin-left: 15px;
+    }
+
+    /* Blog Form */
+    .blogform{
+        width: 90%;
+    }
+
+    .blogform h2{
+        font-size: 35px;
+    }
+
+    .blogform form .form-elem label,
+    .blogform form .form-image label{
+        font-size: 18px;
+    }
+
+    .blogform form .form-image input,
+    .blogform form .form-elem input,
+    .blogform form .form-elem textarea{
+        font-size: 16px;
+    }
+
+    .blogform form .form-elem textarea{
+        height: 150px;
+    }
+
+    .blogform form button[type="submit"]{
+        font-size: 20px;
+    }
+
+    /* Blogs Section */
+    .blogs-container h2{
+        font-size: 35px;
+    }
+
+    .blogs-container .blog-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .blogs-container .blog-container .blog{
+        width: 90%;
+        margin: 20px auto;
+    }
+}

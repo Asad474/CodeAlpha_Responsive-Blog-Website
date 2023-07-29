@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <title>Tech Blogs</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-content">
+                <h1>Tech Blogs</h1>
+            </div>
+
+            <div class="middle-content">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blogs">Blogs</a></li>
+                    <li><a href="/myblogs">My Blogs</a></li>
+                    <li><a href="/createblog">Create Blog</a></li>
+                    <% if (!isLoggedIn) { %>
+                        <li><a href="/login">Login</a></li>
+                    <% } else { %>
+                        <li><a href="/logout">Logout</a></li>
+                    <% } %>
+                </ul>
+            </div>
+
+            <div class="right-content">
+                <form action="" method="get">
+                    <i class="fa fa-thin fa-magnifying-glass fa-2xs search-icon"></i>
+                    <input type="text" name="searchblog" class="searchblog" placeholder="Search Blog">
+                </form>
+            </div>
+        </nav>
+    </header>

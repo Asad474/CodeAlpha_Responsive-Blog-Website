@@ -1,0 +1,22 @@
+<%- include ('partials/header') %>
+    <main>
+        <section class="specificblog-container">
+            <div class="specificblog-header">
+                <h2><%= data.title %></h2>
+                <div class="host-details">
+                    <img src="images/defaultavatar.jpg" alt="">
+                    <span class="name"><%= data.author %></span>
+                    <span class="date"><%= data.updated %></span>
+                </div>
+            </div>
+
+            <div class="specificblog-image">
+                <img src="<%= data.image %>" alt="">
+            </div>
+
+            <div class="specificblog-content">
+                <p><%= data.content %></p>
+            </div>
+        </section>
+    </main>
+<%- include ('partials/footer') %>

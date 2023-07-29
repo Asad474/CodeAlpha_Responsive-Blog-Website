@@ -1,0 +1,37 @@
+<%- include ('partials/header.ejs') %>
+    <main>
+        <section class="image">
+            <img src="images/header.jpg" alt="">
+        </section>
+
+        <section class="home-blog-container">
+            <h2>Latest Blogs</h2>
+            <% data.forEach(blog => { %>
+            <div class="home-blogs">
+                <div class="host-details">
+                    <img src="images/defaultavatar.jpg" alt="">
+                    <span class="name"><%= blog.author %></span>
+                    <span class="date"><%= blog.updated %></span>
+                </div>
+
+                <div class="home-blog-details">
+                    <div class="home-blog">
+                        <h3 class="post-title"><%= blog.title %></h3>
+                        <p class="blog-content"><%= blog.content.substring(0, 180) %><a href="/blog-<%= blog.id %>">... Read more</a></p>
+                    </div>
+
+                    <div class="home-blog-image">
+                        <img src="<%= blog.image %>" alt="">
+                    </div>
+                </div>
+
+                <div class="home-blog-category">
+                    <span><%= blog.category %></span>
+                </div>
+
+                <hr>
+            </div>            
+            <% }); %> 
+        </section>
+    </main>    
+<%- include ('partials/footer.ejs') %>
