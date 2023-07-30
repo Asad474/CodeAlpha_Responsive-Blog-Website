@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+    <main>
+        <section class="deleteblog-container">
+            <form action="" method="post">
+                <h1>Are you sure you want to delete blog"<%= blog.title %>"</h1>
+                <button><a href="/blog-<%= blog._id %>">Cancel</a></button>
+                <button class="delete" type="submit">Delete</button>
+            </form>
+        </section>
+    </main>
+<%- include('partials/footer') %>

@@ -249,6 +249,40 @@ nav .right-content form input[type="text"]{
     line-height: 1.6;
 }
 
+.edit-delete-options{
+    margin-left: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+/* DeleteBlog Seciont */
+.deleteblog-container{
+    width: 80%;
+    margin: 30px auto;
+
+}
+
+.deleteblog-container h1{
+    margin-bottom: 40px;
+}
+
+.deleteblog-container button{
+    width: 17%;
+    margin-left: 20px;
+    background-color: goldenrod;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.deleteblog-container button a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.deleteblog-container .delete{
+    background-color: #C0392B;
+}
+
 /* Login Section */
 .login-container{
     width: 28%;
@@ -392,7 +426,6 @@ nav .right-content form input[type="text"]{
 
 .blogs-container .blog-container{
     display: flex;
-    flex: 1;
     gap: 50px;
     flex-wrap: wrap;
     margin-top: 10px;
@@ -676,5 +709,10 @@ nav .right-content form input[type="text"]{
     .blogs-container .blog-container .blog{
         width: 90%;
         margin: 20px auto;
+    }
+
+    /* DeleteBlog Section */
+    .deleteblog-container button{
+        width: 30%;
     }
 }

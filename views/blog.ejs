@@ -7,6 +7,12 @@
                     <img src="images/defaultavatar.jpg" alt="">
                     <span class="name"><%= data.author %></span>
                     <span class="date"><%= data.updated %></span>
+                    <% if (currentuser && currentuser === data.author_id) { %>
+                        <div class="edit-delete-options">
+                            <a href="/editblog-<%= data.id %>"><i class="fa fa-sharp fa-solid fa-pen fa-xs" style="color: #3498db;"></i></a>
+                            <a href="/deleteblog-<%= data.id %>"><i class="fa fa-sharp fa-solid fa-trash fa-xs" style="color: #c0392b;"></i></a>
+                        </div>
+                    <% } %>
                 </div>
             </div>
 

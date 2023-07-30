@@ -16,4 +16,10 @@ router.route('/editblog-:id')
     .get(blogcontroller.editBlogForm)
     .post(blogcontroller.editBlog);
 
+router.get('/search', blogcontroller.blogfilter);
+
+router.route('/deleteblog-:id')
+    .get(blogcontroller.deleteBlogForm)
+    .post(blogcontroller.deleteBlog);
+    
 module.exports = router;
